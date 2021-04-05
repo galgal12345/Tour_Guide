@@ -38,6 +38,7 @@
             <ImageView
                 android:layout_width="122dp"
                 android:layout_height="73dp"
+                android:padding="10dp"
                 android:layout_alignParentRight="true"
                 android:src="@drawable/logo2" />
         </RelativeLayout>
@@ -52,29 +53,72 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#2252FF">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
                     <TextView
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="United States"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/usa" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FECB4D">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egypt"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/egypt" />
+
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -85,25 +129,67 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#30A300">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
                     <TextView
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brazil"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/brazil" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#CB5223">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Japan"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/japan" />
+
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -114,25 +200,65 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FECB4D">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
                     <TextView
-                        android:layout_marginTop="12dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egypt"
                         android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/egypt" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FECB4D">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egypt"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/egypt" />
+
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -143,25 +269,65 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FECB4D">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
                     <TextView
-                        android:layout_marginTop="12dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egypt"
                         android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/egypt" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FECB4D">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egypt"
+                        android:textColor="#6f6f6f"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/egypt" />
+
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -172,170 +338,65 @@
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FECB4D">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
                     <TextView
-                        android:layout_marginTop="12dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egypt"
                         android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/egypt" />
+
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#FECB4D">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
                     <TextView
-                        android:layout_marginTop="12dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Egypt"
                         android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:textSize="16sp" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
                     <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/egypt" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:src="@drawable/logo2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="16sp"
-                        android:text="Canada"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
