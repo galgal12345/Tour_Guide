@@ -201,7 +201,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
-                app:cardBackgroundColor="#FECB4D">
+                app:cardBackgroundColor="#DF474F">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -213,15 +213,16 @@
                         android:padding="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Egypt"
-                        android:textColor="#6f6f6f"
+                        android:text="Italy"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
                         android:textSize="16sp" />
 
                     <ImageView
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/egypt" />
+                        android:src="@mipmap/italy" />
 
 
                 </LinearLayout>
@@ -236,7 +237,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
-                app:cardBackgroundColor="#FECB4D">
+                app:cardBackgroundColor="#4da5ff">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -248,15 +249,16 @@
                         android:padding="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Egypt"
-                        android:textColor="#6f6f6f"
+                        android:text="Greece"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
                         android:textSize="16sp" />
 
                     <ImageView
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/egypt" />
+                        android:src="@mipmap/greece" />
 
 
                 </LinearLayout>
@@ -270,7 +272,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
-                app:cardBackgroundColor="#FECB4D">
+                app:cardBackgroundColor="#61D7E6">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -282,84 +284,16 @@
                         android:padding="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Egypt"
-                        android:textColor="#6f6f6f"
+                        android:text="Iceland"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
                         android:textSize="16sp" />
 
                     <ImageView
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/egypt" />
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp"
-                app:cardBackgroundColor="#FECB4D">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-
-                    <TextView
-                        android:padding="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Egypt"
-                        android:textColor="#6f6f6f"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="81dp"
-                        android:layout_height="81dp"
-                        android:layout_gravity="right"
-                        android:src="@mipmap/egypt" />
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp"
-                app:cardBackgroundColor="#FECB4D">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-
-                    <TextView
-                        android:padding="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Egypt"
-                        android:textColor="#6f6f6f"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="81dp"
-                        android:layout_height="81dp"
-                        android:layout_gravity="right"
-                        android:src="@mipmap/egypt" />
+                        android:src="@mipmap/iceland" />
 
 
                 </LinearLayout>
@@ -374,7 +308,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
-                app:cardBackgroundColor="#FECB4D">
+                app:cardBackgroundColor="#5CC196">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -386,15 +320,87 @@
                         android:padding="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Egypt"
-                        android:textColor="#6f6f6f"
+                        android:text="Ireland"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
                         android:textSize="16sp" />
 
                     <ImageView
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/egypt" />
+                        android:src="@mipmap/ireland" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#0033A0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Russia"
+                        android:textColor="#ffff"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/russia" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="#A0C61F">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Australia"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="81dp"
+                        android:layout_height="81dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/australia" />
 
 
                 </LinearLayout>
