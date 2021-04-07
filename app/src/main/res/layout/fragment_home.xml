@@ -51,9 +51,11 @@
             android:layout_height="wrap_content">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/united_states_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -87,9 +89,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/egypt_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -123,8 +127,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/brazil_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -158,9 +165,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/japan_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -194,8 +203,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/italy_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -229,9 +241,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/greece_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -265,8 +279,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/iceland_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -300,9 +317,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/ireland_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -336,8 +355,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/russia_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
@@ -371,9 +393,11 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/australia_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
