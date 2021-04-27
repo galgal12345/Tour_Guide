@@ -40,7 +40,7 @@
                 android:layout_height="73dp"
                 android:padding="10dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/logo2" />
+                android:src="@mipmap/logo2" />
         </RelativeLayout>
         <GridLayout
             android:columnCount="2"
@@ -82,7 +82,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/usa" />
+                        android:src="@drawable/usa" />
 
 
                 </LinearLayout>
@@ -120,7 +120,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/egypt" />
+                        android:src="@drawable/egypt" />
 
 
                 </LinearLayout>
@@ -158,7 +158,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/brazil" />
+                        android:src="@drawable/brazil" />
 
 
                 </LinearLayout>
@@ -196,7 +196,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/japan" />
+                        android:src="@drawable/japan" />
 
 
                 </LinearLayout>
@@ -234,7 +234,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/italy" />
+                        android:src="@drawable/italy" />
 
 
                 </LinearLayout>
@@ -272,7 +272,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/greece" />
+                        android:src="@drawable/greece" />
 
 
                 </LinearLayout>
@@ -310,7 +310,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/iceland" />
+                        android:src="@drawable/iceland" />
 
 
                 </LinearLayout>
@@ -348,7 +348,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/ireland" />
+                        android:src="@drawable/ireland" />
 
 
                 </LinearLayout>
@@ -386,7 +386,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/russia" />
+                        android:src="@drawable/russia" />
 
 
                 </LinearLayout>
@@ -424,7 +424,7 @@
                         android:layout_width="81dp"
                         android:layout_height="81dp"
                         android:layout_gravity="right"
-                        android:src="@mipmap/australia" />
+                        android:src="@drawable/australia" />
 
 
                 </LinearLayout>

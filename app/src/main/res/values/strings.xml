@@ -5,4 +5,31 @@
     <string name="home">Home</string>
     <string name="about">about us</string>
     <string name="contact">contact us</string>
+
+    <!--United States Fragment Strings-->
+    <string name="kenai_river">Kenai River</string>
+    <string name="fresh_air">Fresh Air</string>
+    <string name="everywhere">Everywhere</string>
+    <string name="description">The Virgin River, is part of the drainage basin of the Upper Eastern Galilee. Nahal Amud meanders between ponds, orchards, fruit trees, ancient settlements and springs, and gives a feeling of a walk in paradise. The place is a regulated reserve for a fee, and overnight parking is also possible.</string>
+    <string name="los_angeles">Los Angeles</string>
+    <string name="hollywood">HollyWood</string>
+    <string name="new_york">New York</string>
+    <string name="the_statue">The Statue</string>
+    <string name="of_liberty">Of Liberty</string>
+
+    <!--Egypt Fragment Strings-->
+    <string name="great_sphinx">Great Sphinx</string>
+    <string name="sky">Sky</string>
+    <string name="full_of_stars">Full Of Stars</string>
+    <string name="sphinx_description">The Virgin River, is part of the drainage basin of the Upper Eastern Galilee. Nahal Amud meanders between ponds, orchards and more</string>
+    <string name="egyptian_pyramids">Egyptian Pyramids</string>
+    <string name="a_whole_world">A Whole World</string>
+    <string name="of_mystery">Of Mystery</string>
+    <string name="nile_river">Nile River</string>
+    <string name="a_huge_river">A Huge River</string>
+    <string name="in_the_desert">In The Desert</string>
+    <string name="the_virgin_river">The Virgin River</string>
+    <string name="minnesota">The Highway Road In Minnesota</string>
+
+
 </resources>

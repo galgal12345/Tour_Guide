@@ -4,79 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.UnitedStates.UnitedStatesFragment1">
+    tools:context=".Home.Egypt.EgyptActivity">
 
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
         android:id="@+id/imageView2"
+        style="@style/egypt_bg_img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/egypt2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="33dp" />
+        android:src="@drawable/egypt2"/>
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="70dp"
-        android:text="Egyptian Pyramids"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        style="@style/egypt_txt_title_f2_and_f3"
+        android:text="@string/egyptian_pyramids"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="349dp"
-        android:layout_height="60dp"
-        android:text="A Whole World"
-        android:textColor="#6EDA72"
-        android:textSize="50sp"
+        style="@style/egypt_txt_footer_1"
+        android:text="@string/a_whole_world"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="302dp"
-        android:layout_height="73dp"
-        android:text="Of Mystery"
-        android:textColor="#9C7A46"
-        android:textSize="53sp"
-        android:textStyle="bold"
+        style="@style/egypt_txt_footer_2"
+        android:text="@string/of_mystery"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:layout_width="257dp"
-        android:layout_height="255dp"
-        android:layout_marginBottom="16dp"
-        android:text="The Virgin River, is part of the drainage basin of the Upper Eastern Galilee. Nahal Amud meanders between ponds, orchards, fruit trees, ancient settlements and springs, and gives a feeling of a walk in paradise. The place is a regulated reserve for a fee, and overnight parking is also possible. A calm and beautiful water trip, which is recommended in every season"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        style="@style/egypt_txt_main"
+        android:text="@string/description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--OnBoarding-->
+    <style name="txt_title" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginTop">70dp</item>
+        <item name="android:layout_marginBottom">70dp</item>
+        <item name="android:textColor">#AA6C0F</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintHorizontal_bias">0.184</item>
+        <item name="layout_constraintVertical_bias">0.007</item>
+    </style>
+
+    <style name="txt_footer_1" parent="android:TextAppearance">
+        <item name="android:textColor">#6EDA72</item>
+        <item name="android:textSize">50sp</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">59dp</item>
+    </style>
+
+    <style name="txt_footer_2" parent="android:TextAppearance">
+        <item name="android:textColor">#734500</item>
+        <item name="android:textSize">53sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">73dp</item>
+    </style>
+
+    <style name="txt_main" parent="android:TextAppearance">
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textColor">#03A9F4</item>
+        <item name="android:textSize">16sp</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">257dp</item>
+        <item name="android:layout_height">255dp</item>
+    </style>
+
+    <!--Country's Fragments Style-->
+    <!--United States-->
+    <style name="us_bg_img">
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_editor_absoluteX">33dp</item>
+    </style>
+
+
+    <style name="us_txt_title" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">70dp</item>
+        <item name="android:layout_marginBottom">70dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintHorizontal_bias">0.184</item>
+        <item name="layout_constraintVertical_bias">0.007</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="us_txt_footer_1" parent="android:TextAppearance">
+        <item name="android:textColor">#6EDA72</item>
+        <item name="android:textSize">50sp</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">59dp</item>
+    </style>
+
+    <style name="us_txt_footer_2" parent="android:TextAppearance">
+        <item name="android:textColor">#9C7A46</item>
+        <item name="android:textSize">53sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">73dp</item>
+    </style>
+
+    <style name="us_txt_main" parent="android:TextAppearance">
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">257dp</item>
+        <item name="android:layout_height">255dp</item>
+    </style>
+
+    <!--Egypt-->
+    <!--Fragment 1-->
+    <style name="egypt_bg_img">
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_editor_absoluteX">33dp</item>
+    </style>
+
+
+    <style name="egypt_txt_title_f1" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">684dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintHorizontal_bias">0.102</item>
+        <item name="layout_constraintBottom_toBottomOf">@+id/imageView2</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="egypt_txt_footer_1" parent="android:TextAppearance">
+        <item name="android:layout_marginBottom">619dp</item>
+        <item name="android:textColor">#6EDA72</item>
+        <item name="android:textSize">50sp</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="egypt_txt_footer_2" parent="android:TextAppearance">
+        <item name="android:layout_marginBottom">546dp</item>
+        <item name="android:textColor">#9C7A46</item>
+        <item name="android:textSize">53sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">73dp</item>
+    </style>
+
+    <style name="egypt_txt_main" parent="android:TextAppearance">
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintHorizontal_bias">0.0</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">257dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Fragment 2-->
+    <style name="egypt_txt_title_f2_and_f3" parent="android:TextAppearance">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">70dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintHorizontal_bias">0.126</item>
+        <item name="layout_constraintVertical_bias">0.0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

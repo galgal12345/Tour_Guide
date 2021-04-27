@@ -6,7 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-import com.cuberto.liquid_swipe.LiquidPager;
+//import com.cuberto.liquid_swipe.LiquidPager;
 import com.drillgil.android.tourguide.OnBoarding.SimpleFragmentPagerAdapter;
 import com.drillgil.android.tourguide.R;
 
