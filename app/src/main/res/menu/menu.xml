@@ -9,7 +9,7 @@
     <item
         android:id="@+id/book"
         android:icon="@drawable/book"
-        android:title="Books" />
+        android:title="Articles" />
 
     <item
         android:id="@+id/account"
