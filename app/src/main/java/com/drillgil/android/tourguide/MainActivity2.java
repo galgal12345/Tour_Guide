@@ -44,7 +44,7 @@ public class MainActivity2 extends AppCompatActivity {
                         fragment = new HomeFragment();
                         break;
                     case R.id.book:
-                        fragment = new BookFragment();
+                        fragment = new ArticleFragment();
                         break;
                     case R.id.account:
                         fragment = new AccountFragment();
