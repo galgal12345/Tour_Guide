@@ -15,13 +15,14 @@ import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 //import com.cuberto.liquid_swipe.LiquidPager;
+import com.cuberto.liquid_swipe.LiquidPager;
 import com.drillgil.android.tourguide.R;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
 
-    ViewPager pager;
+    LiquidPager pager;
     PagerAdapter viewPager;
 
     @Override

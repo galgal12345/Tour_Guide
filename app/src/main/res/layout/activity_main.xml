@@ -8,10 +8,12 @@
     tools:context=".OnBoarding.MainActivity">
 
 
-        <androidx.viewpager.widget.ViewPager
+        <com.cuberto.liquid_swipe.LiquidPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+
 
 </LinearLayout>
 
