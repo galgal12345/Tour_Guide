@@ -31,5 +31,9 @@
     <string name="the_virgin_river">The Virgin River</string>
     <string name="minnesota">The Highway Road In Minnesota</string>
 
+    <!-- Messages -->
+    <string name="set_permissions_in_settings">Go to Settings -> Apps and Notifications ->
+            WorkManager Demo -> App Permissions and grant access to Storage.</string>
+
 
 </resources>

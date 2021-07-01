@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.drillgil.android.tourguide.Article.NewArticleActivity"
+    android:padding="14dp">
+
+    <RelativeLayout
+        android:id="@+id/upper_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        >
+
+        <ImageView
+            android:id="@+id/publish_article"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="14dp"
+            android:src="@drawable/ic_baseline_check_24" />
+
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/new_article_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/upper_nav"
+        android:hint="Title"
+        android:padding="14dp"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/new_article_img"
+        android:layout_width="397dp"
+        android:layout_height="223dp"
+        android:layout_below="@+id/new_article_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/new_article_context"
+        android:layout_width="397dp"
+        android:layout_height="397dp"
+        android:layout_above="@+id/add_img"
+        android:layout_below="@+id/new_article_img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:gravity="left|top"
+        android:hint="content"
+        android:paddingLeft="14dp"
+        android:textSize="16dp" />
+
+
+    <LinearLayout
+        android:id="@+id/add_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/choose_from_gallery"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_image_24"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            tools:viewBindingIgnore="true"/>
+
+        <ImageButton
+            android:id="@+id/take_snap"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_photo_camera_24"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

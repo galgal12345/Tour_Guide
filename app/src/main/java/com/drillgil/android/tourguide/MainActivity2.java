@@ -8,7 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 
-
+import com.drillgil.android.tourguide.Article.ArticleFragment;
+import com.drillgil.android.tourguide.Home.HomeFragment;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,4 +1,4 @@
-package com.drillgil.android.tourguide;
+package com.drillgil.android.tourguide.Article;
 
 public class Article {
 

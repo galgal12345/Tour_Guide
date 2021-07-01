@@ -1,4 +1,4 @@
-package com.drillgil.android.tourguide;
+package com.drillgil.android.tourguide.Home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.drillgil.android.tourguide.Home.Egypt.EgyptActivity;
 import com.drillgil.android.tourguide.Home.UnitedStates.UnitedStatesActivity;
+import com.drillgil.android.tourguide.R;
 
 
 public class HomeFragment extends Fragment {

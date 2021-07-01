@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TourGuide">
-        <activity android:name=".Home.Egypt.EgyptActivity"></activity>
+        <activity android:name=".Article.NewArticleActivity"></activity>
+        <activity android:name=".Home.Egypt.EgyptActivity" />
         <activity android:name=".Home.UnitedStates.UnitedStatesActivity" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".SplashScreen.IntroductoryActivity">

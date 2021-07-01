@@ -1,4 +1,4 @@
-package com.drillgil.android.tourguide;
+package com.drillgil.android.tourguide.Article;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,8 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.drillgil.android.tourguide.R;
+
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecyclerViewAdapter.ArticleViewHolder> {
 
