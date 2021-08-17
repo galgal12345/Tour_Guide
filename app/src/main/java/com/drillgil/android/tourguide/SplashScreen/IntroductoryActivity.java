@@ -19,6 +19,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.drillgil.android.tourguide.Login.LoginActivity;
 import com.drillgil.android.tourguide.OnBoarding.MainActivity;
 import com.drillgil.android.tourguide.R;
 
@@ -53,7 +54,7 @@ public class IntroductoryActivity extends Activity {
 
             @Override
             public void run() {
-                startActivity(new Intent(IntroductoryActivity.this, MainActivity.class));
+                startActivity(new Intent(IntroductoryActivity.this, LoginActivity.class));
                 IntroductoryActivity.this.finish();
             }
         }, SPLASH_TIME_OUT);

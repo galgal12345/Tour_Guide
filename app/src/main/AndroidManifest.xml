@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.drillgil.android.tourguide">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +15,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TourGuide">
-        <activity android:name=".Article.NewArticleActivity"></activity>
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".Login.SetupActivity" />
+        <activity android:name=".Login.ResetPasswordActivity" />
+        <activity android:name=".MainActivity2" />
         <activity android:name=".Home.Egypt.EgyptActivity" />
         <activity android:name=".Home.UnitedStates.UnitedStatesActivity" />
-        <activity android:name=".MainActivity2" />
+        <activity android:name=".Article.ArticleDetailsActivity" />
+        <activity android:name=".Article.NewArticleActivity" />
+        <activity android:name=".OnBoarding.MainActivity"/>
+
         <activity android:name=".SplashScreen.IntroductoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +36,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OnBoarding.MainActivity">
+
+        <activity android:name=".Login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

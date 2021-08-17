@@ -16,5 +16,8 @@
     <color name="colorText">#FFFFFF</color>
     <color name="colorBackground">#FFFFFF</color>
 
+    <!--new details activity-->
 
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
 </resources>

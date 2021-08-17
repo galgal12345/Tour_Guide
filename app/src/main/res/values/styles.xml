@@ -159,4 +159,9 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+
+    <!--new details activity-->
+    <style name="MyAppBarLayoutTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
 </resources>

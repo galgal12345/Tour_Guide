@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Design For Buttons Like: Login & Create Account and so on... -->
+    <solid android:color="@android:color/holo_blue_bright" />
+
+    <corners android:radius="30dp" />
+
+</shape>

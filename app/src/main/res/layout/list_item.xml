@@ -14,7 +14,7 @@
         android:src="@drawable/europe_paris" />
 
     <TextView
-        android:id="@+id/txt_list_item1"
+        android:id="@+id/list_item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
@@ -28,7 +28,7 @@
         android:id="@+id/txt_list_item2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_list_item1"
+        android:layout_below="@+id/list_item_title"
         android:layout_marginLeft="12dp"
         android:text="The Travel Magazine - "
         android:textColor="@color/white"
@@ -36,12 +36,22 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/txt_list_item3"
+        android:id="@+id/list_item_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_list_item1"
+        android:layout_below="@+id/list_item_title"
         android:layout_toRightOf="@+id/txt_list_item2"
         android:text="Apr 15, 2021"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/list_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_title"
+        android:layout_toRightOf="@+id/list_item_date"
+        android:text=" ▫ 12:26"
         android:textColor="@color/white"
         android:textSize="12sp" />
 
