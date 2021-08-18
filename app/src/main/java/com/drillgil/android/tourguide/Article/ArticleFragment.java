@@ -87,16 +87,14 @@ public class ArticleFragment extends Fragment {
 
     private void DisplyMyAllSheets() {
 
-        Query myArticlesQuery = ArticlesRef.orderByChild("uid")
-                .startAt(currentUserID)
-                .endAt(currentUserID + "\uf8ff");
+        Query SortArticlesInDecendingOrder = ArticlesRef.orderByChild("counter");
 
-        options = new FirebaseRecyclerOptions.Builder<Article>().setQuery(myArticlesQuery, Article.class).build();
+        options = new FirebaseRecyclerOptions.Builder<Article>().setQuery(SortArticlesInDecendingOrder, Article.class).build();
         adapter = new FirebaseRecyclerAdapter<Article, MyArticlesViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull @NotNull MyArticlesViewHolder holder, int position, @NonNull @NotNull Article model) {
 
-                final String SheetKey = getRef(position).getKey();
+                final String ArticleKey = getRef(position).getKey();
 
                 holder.setTitle(model.getArticleTitle());
                 holder.setImage(model.getArticleImage());
@@ -109,7 +107,7 @@ public class ArticleFragment extends Fragment {
                     @Override
                     public void onClick(View v) {
                         Intent clickSheetIntent = new Intent(getActivity(), ArticleDetailsActivity.class);
-                        clickSheetIntent.putExtra("SheetKey", SheetKey);
+                        clickSheetIntent.putExtra("ArticleKey", ArticleKey);
                         startActivity(clickSheetIntent);
                     }
                 });

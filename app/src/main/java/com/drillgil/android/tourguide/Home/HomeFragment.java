@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.drillgil.android.tourguide.Home.Brazil.BrazilActivity;
 import com.drillgil.android.tourguide.Home.Egypt.EgyptActivity;
 import com.drillgil.android.tourguide.Home.UnitedStates.UnitedStatesActivity;
 import com.drillgil.android.tourguide.R;
@@ -53,6 +54,94 @@ public class HomeFragment extends Fragment {
         });
 
         egypt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                startActivity(egyptIntent);
+
+            }
+        });
+
+        //----------------------------------------------------------------------------------
+
+        brazil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent egyptIntent = new Intent(getActivity(), BrazilActivity.class);
+                startActivity(egyptIntent);
+
+            }
+        });
+
+        japan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                startActivity(egyptIntent);
+
+            }
+        });
+
+        //----------------------------------------------------------------------------------
+
+        italy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent unitedStatesIntent = new Intent(getActivity(), UnitedStatesActivity.class);
+                startActivity(unitedStatesIntent);
+
+            }
+        });
+
+        greece.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                startActivity(egyptIntent);
+
+            }
+        });
+
+        //----------------------------------------------------------------------------------
+
+        iceland.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                startActivity(egyptIntent);
+
+            }
+        });
+
+        ireland.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                startActivity(egyptIntent);
+
+            }
+        });
+
+        //----------------------------------------------------------------------------------
+
+        russia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                startActivity(egyptIntent);
+
+            }
+        });
+
+        australia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
