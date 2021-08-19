@@ -10,8 +10,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.drillgil.android.tourguide.Home.Australia.AustraliaActivity;
 import com.drillgil.android.tourguide.Home.Brazil.BrazilActivity;
 import com.drillgil.android.tourguide.Home.Egypt.EgyptActivity;
+import com.drillgil.android.tourguide.Home.Greece.GreeceActivity;
+import com.drillgil.android.tourguide.Home.Iceland.IcelandActivity;
+import com.drillgil.android.tourguide.Home.Ireland.IrelandActivity;
+import com.drillgil.android.tourguide.Home.Italy.ItalyActivity;
+import com.drillgil.android.tourguide.Home.Japan.JapanActivity;
+import com.drillgil.android.tourguide.Home.Russia.RussiaActivity;
+import com.drillgil.android.tourguide.Home.Russia.RussiaFragment1;
 import com.drillgil.android.tourguide.Home.UnitedStates.UnitedStatesActivity;
 import com.drillgil.android.tourguide.R;
 
@@ -79,7 +87,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                Intent egyptIntent = new Intent(getActivity(), JapanActivity.class);
                 startActivity(egyptIntent);
 
             }
@@ -91,7 +99,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent unitedStatesIntent = new Intent(getActivity(), UnitedStatesActivity.class);
+                Intent unitedStatesIntent = new Intent(getActivity(), ItalyActivity.class);
                 startActivity(unitedStatesIntent);
 
             }
@@ -101,7 +109,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                Intent egyptIntent = new Intent(getActivity(), GreeceActivity.class);
                 startActivity(egyptIntent);
 
             }
@@ -113,7 +121,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                Intent egyptIntent = new Intent(getActivity(), IcelandActivity.class);
                 startActivity(egyptIntent);
 
             }
@@ -123,7 +131,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                Intent egyptIntent = new Intent(getActivity(), IrelandActivity.class);
                 startActivity(egyptIntent);
 
             }
@@ -135,7 +143,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                Intent egyptIntent = new Intent(getActivity(), RussiaActivity.class);
                 startActivity(egyptIntent);
 
             }
@@ -145,7 +153,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent egyptIntent = new Intent(getActivity(), EgyptActivity.class);
+                Intent egyptIntent = new Intent(getActivity(), AustraliaActivity.class);
                 startActivity(egyptIntent);
 
             }
