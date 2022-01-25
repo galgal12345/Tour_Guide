@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/drawable/home.xml" value="0.2703125" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/acount_list_item.xml" value="0.35462962962962963" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_article_details.xml" value="0.35462962962962963" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_australia.xml" value="0.25416666666666665" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_introductory.xml" value="0.25416666666666665" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_account.xml" value="0.35462962962962963" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_australia1.xml" value="0.25" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_book.xml" value="0.25416666666666665" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.13125" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/list_item.xml" value="0.35462962962962963" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

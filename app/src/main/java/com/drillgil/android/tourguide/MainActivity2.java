@@ -10,11 +10,11 @@ import android.os.Bundle;
 import android.util.Log;
 
 
+import com.drillgil.android.tourguide.Account.AccountFragment;
 import com.drillgil.android.tourguide.Article.ArticleFragment;
 import com.drillgil.android.tourguide.Home.HomeFragment;
 import com.drillgil.android.tourguide.Login.LoginActivity;
 import com.drillgil.android.tourguide.Login.SetupActivity;
-import com.drillgil.android.tourguide.OnBoarding.MainActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;

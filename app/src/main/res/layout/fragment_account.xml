@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/splash_color"
-    tools:context=".AccountFragment">
+    tools:context=".Account.AccountFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -18,6 +18,7 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/options"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentTop="true"
@@ -30,11 +31,11 @@
                 android:id="@+id/logout"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/logout"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
                 android:layout_marginTop="14dp"
-                android:layout_marginStart="14dp"/>
+                android:src="@drawable/logout" />
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/person_profile_pic"
@@ -61,170 +62,165 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/person_username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/person_full_name"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:text="EDIT PROFILE"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/design_default_color_background"
-                android:textSize="12sp" />
-
-    <LinearLayout
-        android:id="@+id/person_profile_status"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/person_username"
-        android:layout_centerInParent="false"
-        android:layout_centerHorizontal="false"
-        android:layout_marginTop="30dp"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/articles_num"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="40dp"
-            android:text="13"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="11sp" />
-
-        <TextView
-            android:id="@+id/followers_num"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginEnd="100dp"
-            android:layout_toStartOf="@+id/articles_num"
-            android:layout_toEndOf="@+id/following_num"
-            android:text="9"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="11sp" />
-
-        <TextView
-            android:id="@+id/following_num"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="40dp"
-            android:text="137"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="11sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/person_profile_status"
-        android:layout_centerInParent="false"
-        android:layout_centerHorizontal="false"
-        android:layout_marginTop="5dp"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="10dp"
-            android:text="ARTICLES"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginEnd="60dp"
-            android:layout_toStartOf="@+id/txt2"
-            android:layout_toEndOf="@+id/txt1"
-            android:text="FOLLOWERS"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="12sp" />
-
-        <TextView
-            android:id="@+id/txt2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
-            android:text="FOLLOWING"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="12sp" />
-
-    </LinearLayout>
 
 
-
-            <TextView
-                android:id="@+id/person_country"
+            <LinearLayout
+                android:id="@+id/article_followers_following_nums"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/person_profile_status"
+                android:layout_below="@+id/person_full_name"
+                android:layout_centerInParent="false"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/articles_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="40dp"
+                    android:text="13"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/followers_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_toStartOf="@+id/articles_num"
+                    android:layout_toEndOf="@+id/following_num"
+                    android:text="9"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/following_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="40dp"
+                    android:text="137"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/article_followers_following_nums"
+                android:layout_centerInParent="false"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/articles_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:text="ARTICLES"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/followers_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/txt2"
+                    android:layout_toEndOf="@+id/txt1"
+                    android:text="FOLLOWERS"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/following_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:text="FOLLOWING"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recently_articles_watched"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/article_followers_following_nums"
                 android:layout_marginTop="60dp"
                 android:text="Recently articles watched"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_recyclerview_1"
+                android:layout_below="@+id/recently_articles_watched"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/m_recyclerview_recently_articles_watched"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+            </RelativeLayout>
 
             <TextView
-                android:id="@+id/person_dob"
+                android:id="@+id/your_public_articles"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/person_country"
-                android:layout_marginTop="2dp"
-                android:textAllCaps="false"
-                android:textColor="@color/colorAccent"
-                android:textSize="22sp" />
-
-            <TextView
-                android:id="@+id/person_gender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/person_dob"
-                android:layout_marginTop="2dp"
-                android:textAllCaps="false"
-                android:textColor="@color/colorAccent"
-                android:textSize="22sp" />
-
-            <TextView
-                android:id="@+id/person_relationship_status"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/person_gender"
+                android:layout_below="@+id/relativeLayout_recyclerview_1"
                 android:layout_marginTop="10dp"
                 android:text="Your public articles"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_recyclerview_2"
+                android:layout_below="@+id/your_public_articles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/m_recyclerview_your_public_articles"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
 
 
 
+            </RelativeLayout>
         </RelativeLayout>
 
     </ScrollView>

@@ -74,7 +74,7 @@ public class ArticleFragment extends Fragment {
             }
         });
 
-        DisplyMyAllSheets();
+        DisplayMyAllArticles();
 
         return rootView;
     }
@@ -85,7 +85,7 @@ public class ArticleFragment extends Fragment {
 
     }
 
-    private void DisplyMyAllSheets() {
+    private void DisplayMyAllArticles() {
 
         Query SortArticlesInDecendingOrder = ArticlesRef.orderByChild("counter");
 

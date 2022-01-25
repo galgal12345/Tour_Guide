@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_horizontal_6"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/account_list_img"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/account_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/account_list_img"
+        android:text="title" />
+
+    <TextView
+        android:id="@+id/account_list_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_list_title"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/account_list_img"
+        android:text="subtitle" />
+
+    <TextView
+        android:id="@+id/account_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/account_list_subtitle"
+        android:layout_below="@+id/account_list_title"
+        android:text="time" />
+
+    <TextView
+        android:id="@+id/account_list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/account_list_title"
+        android:layout_toRightOf="@+id/account_list_time"
+
+        android:text="date" />
+
+
+</RelativeLayout>
