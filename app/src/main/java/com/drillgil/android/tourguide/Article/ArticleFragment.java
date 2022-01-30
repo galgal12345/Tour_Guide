@@ -26,20 +26,16 @@ import com.squareup.picasso.Picasso;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.text.MessageFormat;
+import java.util.Objects;
+
 
 public class ArticleFragment extends Fragment {
 
 
-    private static final String TAG = "MainActivity";
     private RecyclerView myArticlesList;
     private FirebaseRecyclerOptions<Article> options;
-    private FirebaseRecyclerAdapter<Article, MyArticlesViewHolder> adapter;
-    private FloatingActionButton newArticleBtn;
-
-    private FirebaseAuth mAuth;
-    private String currentUserID;
     private DatabaseReference ArticlesRef;
-
 
 
     public ArticleFragment() {
@@ -50,13 +46,13 @@ public class ArticleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.fragment_book, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_book, container, false);
 
-        mAuth = FirebaseAuth.getInstance();
-        currentUserID = mAuth.getCurrentUser().getUid();
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
         ArticlesRef = FirebaseDatabase.getInstance().getReference().child("Articles");
 
-        newArticleBtn = rootView.findViewById(R.id.fab);
+        FloatingActionButton newArticleBtn = rootView.findViewById(R.id.fab);
 
         myArticlesList = (RecyclerView) rootView.findViewById(R.id.m_articles_recyclerview);
         myArticlesList.setHasFixedSize(true);
@@ -65,19 +61,13 @@ public class ArticleFragment extends Fragment {
         linearLayoutManager.setStackFromEnd(true);
         myArticlesList.setLayoutManager(linearLayoutManager);
 
-
-
-        newArticleBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sendUserToNewSheetActivity();
-            }
-        });
+        newArticleBtn.setOnClickListener(v -> sendUserToNewSheetActivity());
 
         DisplayMyAllArticles();
 
         return rootView;
     }
+
     private void sendUserToNewSheetActivity() {
 
         Intent newSheetIntent = new Intent(getActivity(), NewArticleActivity.class);
@@ -87,12 +77,12 @@ public class ArticleFragment extends Fragment {
 
     private void DisplayMyAllArticles() {
 
-        Query SortArticlesInDecendingOrder = ArticlesRef.orderByChild("counter");
+        Query SortArticlesInDescendingOrder = ArticlesRef.orderByChild("counter");
 
-        options = new FirebaseRecyclerOptions.Builder<Article>().setQuery(SortArticlesInDecendingOrder, Article.class).build();
-        adapter = new FirebaseRecyclerAdapter<Article, MyArticlesViewHolder>(options) {
+        options = new FirebaseRecyclerOptions.Builder<Article>().setQuery(SortArticlesInDescendingOrder, Article.class).build();
+        FirebaseRecyclerAdapter<Article, MyArticlesViewHolder> adapter = new FirebaseRecyclerAdapter<Article, MyArticlesViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull @NotNull MyArticlesViewHolder holder, int position, @NonNull @NotNull Article model) {
+            protected void onBindViewHolder(@NonNull MyArticlesViewHolder holder, int position, @NotNull Article model) {
 
                 final String ArticleKey = getRef(position).getKey();
 
@@ -101,19 +91,12 @@ public class ArticleFragment extends Fragment {
                 holder.setTime(model.getArticleTime());
                 holder.setDate(model.getArticleDate());
 
-
-
-                holder.mView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent clickSheetIntent = new Intent(getActivity(), ArticleDetailsActivity.class);
-                        clickSheetIntent.putExtra("ArticleKey", ArticleKey);
-                        startActivity(clickSheetIntent);
-                    }
+                holder.mView.setOnClickListener(v -> {
+                    Intent clickSheetIntent = new Intent(getActivity(), ArticleDetailsActivity.class);
+                    clickSheetIntent.putExtra("ArticleKey", ArticleKey);
+                    startActivity(clickSheetIntent);
                 });
             }
-
-
 
             @NonNull
             @Override
@@ -138,7 +121,7 @@ public class ArticleFragment extends Fragment {
         TextView articleTime;
         TextView articleDate;
 
-        public MyArticlesViewHolder(@NonNull @NotNull View itemView) {
+        public MyArticlesViewHolder(@NonNull View itemView) {
             super(itemView);
             mView = itemView;
             articleTitle = mView.findViewById(R.id.list_item_title);
@@ -152,16 +135,16 @@ public class ArticleFragment extends Fragment {
         public void setTitle(String title) {
             articleTitle.setText(title);
         }
-
-        public void setImage(String sheetimage) { Picasso.get().load(sheetimage).into(articleImage); }
-
-        public void setTime(String time) {
-            articleTime.setText("   " + time);
+        public void setImage(String sheetImage) {
+            Picasso.get().load(sheetImage).into(articleImage);
         }
-        public void setDate(String date) { articleDate.setText("   " + date); }
+        public void setTime(String time) {
+            articleTime.setText(MessageFormat.format("   {0}", time));
+        }
+        public void setDate(String date) {
+            articleDate.setText(MessageFormat.format("   {0}", date));
+        }
     }
-
-
 
 
 }

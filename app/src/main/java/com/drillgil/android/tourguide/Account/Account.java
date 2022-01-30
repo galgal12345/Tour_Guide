@@ -2,47 +2,45 @@ package com.drillgil.android.tourguide.Account;
 
 public class Account {
 
-    public String img;
-    public String title;
+    public String uid;
+    public String article_title;
+    public String article_image;
+    public String article_content;
     public String time;
     public String date;
 
-    public Account(String img, String title,  String time, String date) {
-        this.img = img;
-        this.title = title;
+    public Account() {}
+
+    public Account(String uid, String articleTitle, String article_image, String articleContent, String time, String date) {
+        this.uid = uid;
+        this.article_title = articleTitle;
+        this.article_image = article_image;
+        this.article_content = articleContent;
         this.time = time;
         this.date = date;
     }
 
-    public String getImg() {
-        return img;
+    public String getUid() {
+        return uid;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public String getArticle_title() {
+        return article_title;
     }
 
-    public String getTitle() {
-        return title;
+    public String getArticle_image() {
+        return article_image;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String getArticle_content() {
+        return article_content;
     }
 
     public String getTime() {
         return time;
     }
 
-    public void setTime(String time) {
-        this.time = time;
-    }
-
     public String getDate() {
         return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
     }
 }
