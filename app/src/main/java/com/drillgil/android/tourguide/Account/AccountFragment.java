@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.airbnb.lottie.LottieAnimationView;
 import com.drillgil.android.tourguide.Article.ArticleDetailsActivity;
 import com.drillgil.android.tourguide.Login.LoginActivity;
 import com.drillgil.android.tourguide.R;
@@ -36,6 +35,7 @@ import com.squareup.picasso.Picasso;
 import java.text.MessageFormat;
 import java.util.Objects;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class AccountFragment extends Fragment {
@@ -43,7 +43,7 @@ public class AccountFragment extends Fragment {
     private static final String TAG = "AccountFragment";
 
     private TextView userProfName;
-    private LottieAnimationView userProfileImage;
+    private CircleImageView userProfileImage;
 
     private DatabaseReference ArticlesRef;
 
@@ -66,7 +66,7 @@ public class AccountFragment extends Fragment {
         ArticlesRef = FirebaseDatabase.getInstance().getReference().child("Articles");
 
 
-        userProfileImage = (LottieAnimationView) rootView.findViewById(R.id.person_profile_pic);
+        userProfileImage = (CircleImageView) rootView.findViewById(R.id.person_profile_pic);
         userProfName = (TextView) rootView.findViewById(R.id.person_full_name);
 
         TextView articlesNum = rootView.findViewById(R.id.articles_num);
@@ -75,18 +75,12 @@ public class AccountFragment extends Fragment {
 
         //RECYCLER_VIEW
         myAccountList = (RecyclerView) rootView.findViewById(R.id.m_recyclerview_your_public_articles);
-        myAccountList.setHasFixedSize(true);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        linearLayoutManager.setReverseLayout(true);
-        linearLayoutManager.setStackFromEnd(true);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         myAccountList.setLayoutManager(linearLayoutManager);
 
         //RECYCLER_VIEW
         myRecentlyList = (RecyclerView) rootView.findViewById(R.id.m_recyclerview_recently_articles_watched);
-        myRecentlyList.setHasFixedSize(true);
-        LinearLayoutManager myLinearLayoutManager = new LinearLayoutManager(getContext());
-        myLinearLayoutManager.setReverseLayout(true);
-        myLinearLayoutManager.setStackFromEnd(true);
+        LinearLayoutManager myLinearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         myRecentlyList.setLayoutManager(myLinearLayoutManager);
 
 
@@ -104,7 +98,6 @@ public class AccountFragment extends Fragment {
                     String myProfileName = Objects.requireNonNull(snapshot.child("fullname").getValue()).toString();
                     userProfName.setText(myProfileName);
                 }
-
             }
 
             @Override
@@ -121,8 +114,9 @@ public class AccountFragment extends Fragment {
 
     }
 
+
     private void DisplayMyAllMyWatchedRecentlyArticles() {
-        Query SortArticlesInDescendingOrder = ArticlesRef.orderByChild("counter");
+        Query SortArticlesInDescendingOrder = ArticlesRef.orderByChild("counter").limitToFirst(3);
 
         options = new FirebaseRecyclerOptions.Builder<Account>().setQuery(SortArticlesInDescendingOrder, Account.class).build();
         FirebaseRecyclerAdapter<Account, MyAccountArticlesViewHolder> adapter = new FirebaseRecyclerAdapter<Account, MyAccountArticlesViewHolder>(options) {
@@ -156,7 +150,7 @@ public class AccountFragment extends Fragment {
 
     private void DisplayMyAllMyPublicArticles() {
 
-        Query SortArticlesInDescendingOrder = ArticlesRef.orderByChild("counter");
+        Query SortArticlesInDescendingOrder = ArticlesRef.orderByChild("counter").limitToFirst(3);
 
         options = new FirebaseRecyclerOptions.Builder<Account>().setQuery(SortArticlesInDescendingOrder, Account.class).build();
         FirebaseRecyclerAdapter<Account, MyAccountArticlesViewHolder> adapter = new FirebaseRecyclerAdapter<Account, MyAccountArticlesViewHolder>(options) {

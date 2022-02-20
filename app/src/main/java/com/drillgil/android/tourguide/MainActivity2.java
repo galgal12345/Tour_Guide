@@ -113,7 +113,6 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-
                 if (!dataSnapshot.hasChildren()) {
                     SendUserToSetupActivity();
                 }

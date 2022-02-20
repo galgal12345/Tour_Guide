@@ -14,13 +14,15 @@
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_reset_password.xml" value="0.25" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/activity_setup.xml" value="0.25416666666666665" />
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/app_bar_layout.xml" value="0.13125" />
-        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_account.xml" value="0.31592689295039167" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_account.xml" value="0.4" />
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_australia1.xml" value="0.25" />
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_book.xml" value="0.25416666666666665" />
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.13125" />
         <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/layout/list_item.xml" value="0.35462962962962963" />
+        <entry key="..\:/almul/AndroidStudioProjects/TourGuide/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
